@@ -1,83 +1,51 @@
-# Actividad Formativa 3 - Herencia en Python
+# 🎓 Actividad Formativa 3 – Filtros Digitales en Python
 
-Este proyecto corresponde a la Actividad Formativa 3 de la materia de Programación Orientada a Objetos 
-El objetivo es aplicar **herencia** y **reutilización de código** en Python.
+👩‍💻 **Nombre:** Mayra  
+📚 **Materia:** Programación de Señales  
+📅 **Fecha:** Agosto 2026  
 
-## 📌 Conceptos aplicados
-- **Herencia:** Clases `Laptop` y `Celular` derivadas de la clase base `Producto`.
-- **Reutilización de código:** Uso de `super().__init__()` y `super().mostrar_info()` para aprovechar atributos y métodos de la clase base.
-- **Sobrescritura de métodos:** Extensión del método `mostrar_info()` en las subclases para mostrar atributos propios.
+---
 
-## 📑 Código principal (`herencia.py`)
-```python
-class Producto:
-    def __init__(self, nombre, precio, stock):
-        self._nombre = nombre
-        self._precio = precio
-        self._stock = stock
+## ✨ Introducción
+En esta actividad se implementaron **filtros digitales en Python** para analizar señales con ruido.  
+El objetivo fue aplicar conceptos de procesamiento digital de señales, diseñando filtros Butterworth y observando su efecto sobre una señal compuesta de diferentes frecuencias.
 
-    def mostrar_info(self) -> None:
-        print(f"Producto: {self._nombre}")
-        print(f"Precio: ${self._precio}")
-        print(f"Stock: {self._stock} unidades")
+---
 
-    def disponible(self) -> bool:
-        return self._stock > 0
+## ⚙️ Simulación
+El código (`Actividad 3.py`) genera una señal de prueba formada por:  
+- Una componente de **50 Hz**  
+- Una componente de **200 Hz**  
+- Ruido aleatorio  
 
+Posteriormente se diseñaron filtros digitales con la librería `scipy.signal` para atenuar las frecuencias no deseadas y mejorar la calidad de la señal.
 
-class Laptop(Producto):
-    def __init__(self, nombre, precio, stock, ram, almacenamiento):
-        super().__init__(nombre, precio, stock)
-        self._ram = ram
-        self._almacenamiento = almacenamiento
+---
 
-    def mostrar_info(self) -> None:
-        super().mostrar_info()
-        print(f"RAM: {self._ram}")
-        print(f"Almacenamiento: {self._almacenamiento}")
+## 📊 Resultados
+La siguiente gráfica muestra la señal original con ruido y el resultado tras aplicar un filtro pasa bajos:
 
+![Resultados del filtro](resultados_filtros.png)
 
-class Celular(Producto):
-    def __init__(self, nombre, precio, stock, pantalla, camara):
-        super().__init__(nombre, precio, stock)
-        self._pantalla = pantalla
-        self._camara = camara
+Se observa que el filtro elimina gran parte de la componente de alta frecuencia y del ruido, conservando la señal de baja frecuencia.
 
-    def mostrar_info(self) -> None:
-        super().mostrar_info()
-        print(f"Pantalla: {self._pantalla}")
-        print(f"Cámara: {self._camara}")
+---
 
+## ✅ Conclusión
+El uso de filtros digitales permite **separar componentes de frecuencia** y reducir el ruido en señales reales.  
+Esta práctica refuerza la importancia de comprender parámetros como la frecuencia de corte y el orden del filtro para obtener resultados óptimos en aplicaciones de procesamiento de señales.
 
-if __name__ == "__main__":
-    laptop1 = Laptop("Dell Inspiron", 15000, 10, "16GB", "512GB SSD")
-    celular1 = Celular("iPhone 13", 20000, 5, "6.1 pulgadas", "12MP")
+---
 
-    print("=== Información de la Laptop ===")
-    laptop1.mostrar_info()
-    print("¿Disponible?:", "Sí" if laptop1.disponible() else "No")
+## 🛠️ Tecnologías utilizadas
+- Python 3.x  
+- Librerías: `numpy`, `matplotlib`, `scipy.signal`  
+- Entorno: Visual Studio Code  
 
-    print("\n=== Información del Celular ===")
-    celular1.mostrar_info()
-    print("¿Disponible?:", "Sí" if celular1.disponible() else "No")
+---
 
+## 🚀 Cómo ejecutar
+1. Clonar el repositorio:  
+   ```bash
+   git clone https://github.com/Minyongi17/Actividad-Formativa-3-Filtros-Digitales.git
 
-
-
-#Ejemplo de salida 
-
-=== Información de la Laptop ===
-Producto: Dell Inspiron
-Precio: $15000
-Stock: 10 unidades
-RAM: 16GB
-Almacenamiento: 512GB SSD
-¿Disponible?: Sí
-
-=== Información del Celular ===
-Producto: iPhone 13
-Precio: $20000
-Stock: 5 unidades
-Pantalla: 6.1 pulgadas
-Cámara: 12MP
-¿Disponible?: Sí
