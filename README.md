@@ -1,8 +1,17 @@
-# 🎓 Actividad Formativa 3 – Filtros Digitales en Python
+# 🎓 Actividad Formativa 3 – Implementación y Evaluación de Filtros Digitales
 
-👩‍💻 **Nombre:** Mayra  
-📚 **Materia:** Programación de Señales  
+👩‍💻 **Alumna:** Mayra Yeseni Guzmán Soto  
+📚 **Materia:** Señales y Sistemas (A)  
+👨‍🏫 **Tutor:** Ing. Luis Osvaldo Moreno Gaytán  
 📅 **Fecha:** Agosto 2026  
+
+---
+
+✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨  
+🖥️ **Ingeniería en Software**  
+✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
+
+
 
 ---
 
@@ -27,25 +36,8 @@ La siguiente gráfica muestra la señal original con ruido y el resultado tras a
 
 ![Resultados del filtro](resultados_filtros.png)
 
-Se observa que el filtro elimina gran parte de la componente de alta frecuencia y del ruido, conservando la señal de baja frecuencia.
-
 ---
 
 ## ✅ Conclusión
 El uso de filtros digitales permite **separar componentes de frecuencia** y reducir el ruido en señales reales.  
 Esta práctica refuerza la importancia de comprender parámetros como la frecuencia de corte y el orden del filtro para obtener resultados óptimos en aplicaciones de procesamiento de señales.
-
----
-
-## 🛠️ Tecnologías utilizadas
-- Python 3.x  
-- Librerías: `numpy`, `matplotlib`, `scipy.signal`  
-- Entorno: Visual Studio Code  
-
----
-
-## 🚀 Cómo ejecutar
-1. Clonar el repositorio:  
-   ```bash
-   git clone https://github.com/Minyongi17/Actividad-Formativa-3-Filtros-Digitales.git
-
