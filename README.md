@@ -60,20 +60,16 @@ plt.title("Señal filtrada (pasa bajos)")
 plt.show()
 ``` 
 
-📈 Informe sobre la efectividad en el dominio de la frecuencia
-Se realizó un análisis en el dominio de la frecuencia mediante la Transformada Rápida de Fourier (FFT):
+## 📈 Informe sobre la efectividad en el dominio de la frecuencia
+Se realizó un análisis en el dominio de la frecuencia mediante la **Transformada Rápida de Fourier (FFT)**.  
 
-La señal original muestra componentes en 50 Hz y 200 Hz, además de ruido distribuido.
+La señal original muestra componentes en **50 Hz** y **200 Hz**, además de ruido distribuido.  
+Tras aplicar el filtro pasa bajos, la componente de **200 Hz** y gran parte del ruido fueron atenuados.  
+El espectro confirma que el filtro conserva la frecuencia de interés (50 Hz) y elimina las no deseadas.  
 
-Tras aplicar el filtro pasa bajos, la componente de 200 Hz y gran parte del ruido fueron atenuados.
+---
 
-El espectro confirma que el filtro conserva la frecuencia de interés (50 Hz) y elimina las no deseadas.
-
-
-
-✅ Conclusiones
-Los filtros digitales son herramientas efectivas para separar componentes de frecuencia y reducir ruido.
-
-La práctica permitió observar cómo parámetros como la frecuencia de corte y el orden del filtro influyen en los resultados.
-
-El análisis en el dominio de la frecuencia confirma la efectividad del filtro en aplicaciones reales de procesamiento de señales.
+## ✅ Conclusiones
+- Los filtros digitales son herramientas efectivas para separar componentes de frecuencia y reducir ruido.  
+- La práctica permitió observar cómo parámetros como la frecuencia de corte y el orden del filtro influyen en los resultados.  
+- El análisis en el dominio de la frecuencia confirma la efectividad del filtro en aplicaciones reales de procesamiento de señales.  
