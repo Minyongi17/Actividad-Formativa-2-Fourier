@@ -69,6 +69,8 @@ Tras aplicar el filtro pasa bajos, la componente de 200 Hz y gran parte del ruid
 
 El espectro confirma que el filtro conserva la frecuencia de interés (50 Hz) y elimina las no deseadas.
 
+
+
 ✅ Conclusiones
 Los filtros digitales son herramientas efectivas para separar componentes de frecuencia y reducir ruido.
 
